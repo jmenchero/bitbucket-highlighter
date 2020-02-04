@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Bitbucket Highlighter",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://bitbucket.org/*/*/pull-requests/*/*/diff*"
+      ],
+      "css": [
+        "default.min.css"
+      ],
+      "js": [
+        "highlight.min.js",
+        "bitbucketHighlighter.js"
+      ]
+    }
+  ]
+}
